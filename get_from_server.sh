@@ -1,0 +1,1 @@
+scp -r edu-cmc-skpod21-321-18@polus.cs.msu.ru:/home_edu/edu-cmc-skpod21-321/edu-cmc-skpod21-321-18 /mnt/c/Users/venia/CLionProjects/untitled
