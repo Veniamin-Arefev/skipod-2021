@@ -1,0 +1,68 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 842065: <source /polusfs/setenv/setup.SMPI;#BSUB -n 80 -q normal;#BSUB -W 01:30;#BSUB -o mpi/mpi.out.%J;#BSUB -e mpi/mpi.err.%J;mpiexec -n 1 ./test;mpiexec -n 2 ./test;mpiexec -n 4 ./test;mpiexec -n 8 ./test;mpiexec -n 16 ./test;mpiexec -n 32 ./test;mpiexec -n 64 ./test;mpiexec -n 80 ./test> in cluster <MSUCluster> Done
+
+Job <source /polusfs/setenv/setup.SMPI;#BSUB -n 80 -q normal;#BSUB -W 01:30;#BSUB -o mpi/mpi.out.%J;#BSUB -e mpi/mpi.err.%J;mpiexec -n 1 ./test;mpiexec -n 2 ./test;mpiexec -n 4 ./test;mpiexec -n 8 ./test;mpiexec -n 16 ./test;mpiexec -n 32 ./test;mpiexec -n 64 ./test;mpiexec -n 80 ./test> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod21-321-18> in cluster <MSUCluster> at Thu Dec 16 01:51:27 2021
+Job was executed on host(s) <20*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skpod21-321-18> in cluster <MSUCluster> at Thu Dec 16 01:51:27 2021
+                            <20*polus-c2-ib.bmc.hpc.cs.msu.ru>
+                            <20*polus-c4-ib.bmc.hpc.cs.msu.ru>
+                            <20*polus-c1-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skpod21-321/edu-cmc-skpod21-321-18> was used as the home directory.
+</home_edu/edu-cmc-skpod21-321/edu-cmc-skpod21-321-18> was used as the working directory.
+Started at Thu Dec 16 01:51:27 2021
+Terminated at Thu Dec 16 01:51:51 2021
+Results reported at Thu Dec 16 01:51:51 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 80 -q normal
+#BSUB -W 01:30
+#BSUB -o mpi/mpi.out.%J
+#BSUB -e mpi/mpi.err.%J
+mpiexec -n 1 ./test
+mpiexec -n 2 ./test
+mpiexec -n 4 ./test
+mpiexec -n 8 ./test
+mpiexec -n 16 ./test
+mpiexec -n 32 ./test
+mpiexec -n 64 ./test
+mpiexec -n 80 ./test
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   314.33 sec.
+    Max Memory :                                 1458 MB
+    Average Memory :                             948.83 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              24
+    Max Threads :                                69
+    Run time :                                   30 sec.
+    Turnaround time :                            24 sec.
+
+The output (if any) follows:
+
+       130     1    4.49119
+       130     2    2.42813
+       130     4    1.83964
+       130     8    1.47459
+       130    16    1.64664
+       130    32    2.13748
+       130    64    1.17643
+       130    80    1.12778
+
+
+PS:
+
+Read file <mpi/mpi.err.842065> for stderr output of this job.
+

@@ -1,0 +1,65 @@
+Sender: LSF System <lsfadmin@polus-c1-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 821236: <source /polusfs/setenv/setup.SMPI;#BSUB -n 1 -q normal;#BSUB -W 01:30;#BSUB -o test.out.%J;#BSUB -e test.err.%J;OMP_NUM_THREADS=1 mpiexec ./test;OMP_NUM_THREADS=2 mpiexec ./test;OMP_NUM_THREADS=4 mpiexec ./test;OMP_NUM_THREADS=8 mpiexec ./test;OMP_NUM_THREADS=16 mpiexec ./test;OMP_NUM_THREADS=32 mpiexec ./test;OMP_NUM_THREADS=64 mpiexec ./test;OMP_NUM_THREADS=128 mpiexec ./test;OMP_NUM_THREADS=160 mpiexec ./test> in cluster <MSUCluster> Done
+
+Job <source /polusfs/setenv/setup.SMPI;#BSUB -n 1 -q normal;#BSUB -W 01:30;#BSUB -o test.out.%J;#BSUB -e test.err.%J;OMP_NUM_THREADS=1 mpiexec ./test;OMP_NUM_THREADS=2 mpiexec ./test;OMP_NUM_THREADS=4 mpiexec ./test;OMP_NUM_THREADS=8 mpiexec ./test;OMP_NUM_THREADS=16 mpiexec ./test;OMP_NUM_THREADS=32 mpiexec ./test;OMP_NUM_THREADS=64 mpiexec ./test;OMP_NUM_THREADS=128 mpiexec ./test;OMP_NUM_THREADS=160 mpiexec ./test> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod21-321-18> in cluster <MSUCluster> at Mon Nov 15 03:10:11 2021
+Job was executed on host(s) <polus-c1-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skpod21-321-18> in cluster <MSUCluster> at Mon Nov 15 03:10:11 2021
+</home_edu/edu-cmc-skpod21-321/edu-cmc-skpod21-321-18> was used as the home directory.
+</home_edu/edu-cmc-skpod21-321/edu-cmc-skpod21-321-18> was used as the working directory.
+Started at Mon Nov 15 03:10:11 2021
+Terminated at Mon Nov 15 03:40:05 2021
+Results reported at Mon Nov 15 03:40:05 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source /polusfs/setenv/setup.SMPI
+#BSUB -n 1 -q normal
+#BSUB -W 01:30
+#BSUB -o test.out.%J
+#BSUB -e test.err.%J
+OMP_NUM_THREADS=1 mpiexec ./test
+OMP_NUM_THREADS=2 mpiexec ./test
+OMP_NUM_THREADS=4 mpiexec ./test
+OMP_NUM_THREADS=8 mpiexec ./test
+OMP_NUM_THREADS=16 mpiexec ./test
+OMP_NUM_THREADS=32 mpiexec ./test
+OMP_NUM_THREADS=64 mpiexec ./test
+OMP_NUM_THREADS=128 mpiexec ./test
+OMP_NUM_THREADS=160 mpiexec ./test
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   19528.73 sec.
+    Max Memory :                                 16503 MB
+    Average Memory :                             16152.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                169
+    Run time :                                   1795 sec.
+    Turnaround time :                            1794 sec.
+
+The output (if any) follows:
+
+      1026     1  772.12806
+      1026     2  387.76767
+      1026     4  197.09496
+      1026     8  101.20258
+      1026    16   81.29922
+      1026    32   69.86109
+      1026    64   61.57159
+      1026   128   61.24085
+      1026   160   58.10687
+
+
+PS:
+
+Read file <test.err.821236> for stderr output of this job.
+

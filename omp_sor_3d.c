@@ -45,7 +45,11 @@ int main(int an, char **as) {
         slider ^= 1;
 
 
+
+
 //        printf("it=%4i   eps=%f\n", it, eps);
+        printf("it=%4i slider = %3d ", it, slider);
+        verify();
         if (eps < maxeps) {
             break;
         }
@@ -54,6 +58,7 @@ int main(int an, char **as) {
     verify();
 
 //    fprintf(stdout, "time = %lf\n", omp_get_wtime() - time_begin);
+    printf("%10d %5d ",N, omp_get_max_threads());
     printf("%10.5lf\n", omp_get_wtime() - time_begin);
     return 0;
 }
@@ -86,11 +91,10 @@ void verify() {
             }
         }
     }
-    printf("  S cur  = %f\n", s);
+    printf("  S cur  = %.3f\n", s);
 //    printf("  S true = 2814659.450575\n");
 //    if (s - 2814659.450575 < maxeps) {
 //Size Thread num time
-    printf("%10d %5d ",N, omp_get_max_threads());
 //        printf("Thread num  = %d\n", omp_get_max_threads());
 //        printf("Size  = %d\n", N);
 //    }
